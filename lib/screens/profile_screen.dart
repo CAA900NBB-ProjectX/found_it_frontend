@@ -169,12 +169,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     icon: const Icon(Icons.logout),
                     label: const Text('Logout'),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.red,
+                      backgroundColor: Colors.red,
                       minimumSize: const Size(double.infinity, 50),
                     ),
                     onPressed: _isLoading ? null : _logout,
                   ),
-
                   const SizedBox(height: 24),
                   const Text(
                     'Found It! v1.0.0',

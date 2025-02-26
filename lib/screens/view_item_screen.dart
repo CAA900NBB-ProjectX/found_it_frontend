@@ -133,7 +133,7 @@ class _ViewItemScreenState extends State<ViewItemScreen> {
                     children: [
                       Text(
                         _item!.itemName,
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.titleLarge,
                       ),
                       const Divider(),
                       _buildItemDetail('ID', '${_item!.itemId}'),

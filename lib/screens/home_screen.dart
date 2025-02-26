@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Text(
                       'Quick Actions',
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
                     const SizedBox(height: 16),
                     Row(
@@ -138,7 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               // This will be handled by the navigation bar
                             },
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.green,
+                              backgroundColor: Colors.green,
                             ),
                           ),
                         ),
@@ -158,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Text(
                   'Recent Items',
-                  style: Theme.of(context).textTheme.headline6,
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
                 TextButton(
                   onPressed: () {
