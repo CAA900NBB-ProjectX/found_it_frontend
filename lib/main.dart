@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'auth/screens/signup_page.dart';
+import 'chat/screens/chat_list_screen.dart';
 import 'screens/home/home_screen.dart';
 import 'screens/lost_item_screen.dart';
 import 'screens/found_item_screen.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
             email: ModalRoute.of(context)!.settings.arguments as String
         ),
         '/test': (context) => const HomeScreen(),
+        '/messages': (context) => const ChatListScreen(),
       },
     );
   }
