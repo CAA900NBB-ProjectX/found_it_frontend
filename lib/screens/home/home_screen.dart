@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
     _loadItems();
   }
 
-  
+
   Future<void> _loadItems() async {
     setState(() => _isLoading = true);
 
@@ -177,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       // No floating action button - removed
 
-      // Custom bottom navigation with just Home and Profile
+      // Custom bottom navigation with Home, Messages and Profile
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -196,6 +196,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               _buildNavItem(Icons.home, 'Home', true),
+              _buildNavItem(Icons.chat_bubble, 'Messages', false),
               _buildNavItem(Icons.person, 'Profile', false),
             ],
           ),
@@ -211,6 +212,9 @@ class _HomeScreenState extends State<HomeScreen> {
         if (label == 'Profile') {
           // Navigate to profile
           Navigator.pushNamed(context, '/profile');
+        } else if (label == 'Messages') {
+          // Navigate to messages
+          Navigator.pushNamed(context, '/messages');
         }
       },
       child: Column(
